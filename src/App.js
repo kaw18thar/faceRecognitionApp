@@ -52,9 +52,9 @@ onInputChange = (event) => {
   this.setState({input: event.target.value});
 
 }
-onRouteChange = () => {
+onRouteChange = (route) => {
   console.log('clicked on onRouteChange');
-  this.setState({route: 'home'});
+  this.setState({route: route});
 }
 onButtonSubmit = () => {
   this.setState({imageUrl: this.state.input})
@@ -66,7 +66,7 @@ onButtonSubmit = () => {
 render () {
   return (
     <div>
-    <Navigation/>
+    <Navigation onRouteChange= {this.onRouteChange}/>
     {this.state.route === 'signin'
     ? <Signin onRouteChange= {this.onRouteChange}/>
     : <div>

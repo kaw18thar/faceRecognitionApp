@@ -1,7 +1,7 @@
 import React from 'react';
 import tachyons from 'tachyons';
 const Rank = () =>{
- return (<div className='white'>
+ return (<div className=' pa5 white'>
               <p className='f3 tc '>
               {'Your rank is.. '}
 

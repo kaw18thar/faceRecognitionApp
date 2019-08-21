@@ -3,7 +3,7 @@ import tachyons from 'tachyons';
 const Signin =({onRouteChange}) =>{
 
   return(
-    <article className="br2 ba dark-gray b--white-10 mv4 w-100 w-50-m w-25-l mw5 center">
+    <article className=" br2 ba dark-gray b--white-10 mv4 w-100 w-50-m w-25-l mw5 center">
       <main className="pa4 white-80">
         <form className="measure ">
           <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
@@ -19,7 +19,7 @@ const Signin =({onRouteChange}) =>{
           </fieldset>
           <div className="">
             <input
-            onClick={onRouteChange}
+            onClick={()=>onRouteChange('home')}
             className="b ph3 pv2 input-reset ba b--white bg-transparent white grow pointer f6 dib"
             type="sumbit"
             defaultValue="Sign in"/>
